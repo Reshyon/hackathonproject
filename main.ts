@@ -1,8 +1,8 @@
 controller.A.onEvent(ControllerButtonEvent.Pressed, function () {
-    MyPlayer.setVelocity(0, -15)
+    MyPlayer.setVelocity(0, -20)
 })
 controller.A.onEvent(ControllerButtonEvent.Released, function () {
-    MyPlayer.setVelocity(0, 15)
+    MyPlayer.setVelocity(0, 20)
 })
 let MyPlayer: Sprite = null
 scene.setBackgroundImage(img`
