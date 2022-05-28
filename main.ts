@@ -1,8 +1,8 @@
 controller.A.onEvent(ControllerButtonEvent.Pressed, function () {
-    MyPlayer.setVelocity(0, -12)
+    MyPlayer.setVelocity(0, -15)
 })
 controller.A.onEvent(ControllerButtonEvent.Released, function () {
-    MyPlayer.setVelocity(0, 12)
+    MyPlayer.setVelocity(0, 15)
 })
 let MyPlayer: Sprite = null
 scene.setBackgroundImage(img`
@@ -145,6 +145,7 @@ MyPlayer = sprites.create(img`
     . . c b d d d d d 5 5 5 b b . . 
     . . . c c c c c c c c b b . . . 
     `, SpriteKind.Player)
+info.setScore(0)
 game.onUpdate(function () {
 	
 })
